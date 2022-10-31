@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Travel around Vietnam with Dinh Viet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #323232;
+  }
+
+  nav, {
+    font-family: 'Open Sans', sans-serif; font-weight: 550;
+  }
+
+  h1
+  {
+    font-family: 'Square Peg', cursive;
+    font-weight:  500;
+    font-size: 156px;
+    line-height: 150px;
+   
+    color: #FFFFFF;
+  }
+
+  h2
+  {
+font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #025CE0;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  h4
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 20px;
+ 
+    color: #025CE0;
+  }
+
+h6{
+    color: #9B9B9B;
+    text-align: right;
+    font-weight: 400;
+    font-size: 17px;
+}
+.footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #1B3761;
+   color: white;
+   text-align: center;
+   padding: 16px;
+}
+
+.fa {
+  padding: 12px;
+  font-size: 24px;
+  width: 48px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #224375;
+  color: #D5E0F0;
+}
+
+.fa-linkedin {
+  background: #224375;
+  color: #D5E0F0;
+}
+
+.fa-youtube {
+  background: #224375;
+  color: #D5E0F0;
+}
+
+.container {
+  width: 90%;
+  height: 700px;
+  margin: auto;
+  text-align: center;
+}
+body, html {
+    height: 100%;
+}
+ 
+/* Phần khung chứa hình ảnh*/
+.hero-image {
+    /* The image used */
+    background-image: url("D:/Việt/Portfolio kì 7/Coding/Assignment 2/Photo/8.jpg");
+ 
+    /* chiều cao của khung chứa */
+    height: 100%;
+ 
+    /* đặt vị trí cho hình ảnh */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+ 
+/* đặt đặt text lên phần hình ảnh */
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+</style>
+
+<body>
+<!--------------------
+    NAV
+-------------------->
+<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+    <div class="container-fluid">
+      
+      <div class="collapse navbar-collapse" id="mynavbar" style="margin-left: 100px;">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Travel Blog.html" style="font-size: 24px; font-family: 'Merriweather', serif; font-weight: 800;color: #025CE0"><em>VietTravel</em></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Travel Blog.html" style="margin-left: 60px; margin-top: 6px">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Blog.html" style="margin-left: 24px; margin-top: 6px">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact Us.html" style="margin-left: 24px; margin-top: 6px">Contact Us</a>
+          </li>
+        </ul>
+          <form class="d-flex" style="margin-right: 100px;">
+            <input class="form-control me-2" type="text" placeholder="What is in your mind?" style="width: 300px;"> 
+            <button class="btn btn-primary" type="button" style="background-color: #025CE0">Search</button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+<!--------------------------
+    HERO IMAGE
+-------------------------->
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Have yourself an eco-friendly<br> nature
+      travel in Quang Nam</h1>
+    </div>
+  </div>
+ 
+  <div class="content" style="margin-left: 400px; margin-right:400px;margin-top: 100px;">
+    <p>Responsible tourism is becoming increasingly popular as travelers seek ways to minimize their environmental impact while supporting local communities instead of corporations. Green tourism, ecotourism, and sustainable tourism are all on the rise. Travel and hospitality industries around the world are changing to accommodate newer, more ethical models. 
+<br><br>
+“Ecotourism” typically focuses both on protecting the natural environment and preserving and supporting local culture. It brings people to immerse themselves in nature while minimizing the ecological impact of the visit. Education about local plant and animal life is often the draw of the trip itself. Travelers can experience national parks, mountains, and marine areas, and their tourism dollars often directly fund the area’s conservation. Many ecotourism models also promote cultural immersion, offering income opportunities to families and small local businesses. 
+<br><br>
+In the last two years, Quang Nam province in central Vietnam has heavily embraced the ecotourism model. The region is adapting rapidly to welcome global travelers to small family-run homestays, indigenous villages, and national parks.
+</p>
+<br>
+<h4>Ecotourism in Quang Nam </h4>
+<br>
+<p>The Tourism Association of Quang Nam Province has partnered with the Swiss Sustainable Tourism Programme to launch a set of green tourism criteria. The provincial tourism association will grant a “Green Certification” to venues in the hospitality industry that meet the international criteria for sustainability.  
+<br><br>
+Hoi An is the most famous city in Quang Nam and has been a global travel destination for decades. In the last few years, businesses in Hoi An have embraced green tourism and are making significant efforts to reduce plastic waste and transition to eco-friendly products and packaging. Some collectives have organized “green tours” to clean trash from the beach and rivers.</p>
+<br>
+<img src="D:\Việt\Portfolio kì 7\Coding\Assignment 2\Photo\6.jpg" style="width:100%">
+<br> <br>
+<p>Tra Que Vegetable Village is one example of a simple ecotourism model in Hoi An. Tra Que is an organic farm established 300 years ago just outside of central Hoi An. Crops are fertilized with algae from a nearby lagoon, rather than chemicals. The farm uses traditional farming methods to supply local restaurants, markets, and homes with fresh herbs and vegetables.</p>
+<br>
+<img src="D:\Việt\Portfolio kì 7\Coding\Assignment 2\Photo\7.jpg" style="width:100%">
+<br><br><br>
+<h4>Ecotourism and Environmental Sustainability</h4>
+<br>
+<p>
+Ta Lang is an ideal ecotourism destination due to its location. Home to the indigenous Co Tu community, Ta Lang sits between mountains, forests, waterfalls, and other indigenous populations along the spectacular Ho Chi Minh Highway. USAID has supported Ta Leng’s development into an ecotourism village with the intention of protecting the culture of the Co Tu people while preserving regional biodiversity. 
+<br><br>
+Follow locals through their daily lives including vegetable picking, fruit harvesting, and fishing. Adventurous travelers can join a guide on a bamboo raft down a river towards waterfalls, or down cycling paths through the jungle. In the evening, watch performances of indigenous music and folk dances after a hot, home-cooked meal of traditional dishes. 
+<br><br>
+These activities are a world apart from the experiences that most travelers have in Vietnam, which focus on the food, crafts, and culture of the Kinh people, the majority Vietnamese ethnic group. Ecotourism like this has a threefold benefit. It supports local livelihoods and works towards the eradication of poverty. It protects local ecosystems and empowers the communities who live and work within them. And it offers off-the-beaten-path experiences that hotels, cities, and guidebooks cannot replicate.
+</p>
+<br>
+<h6><em> Written by: Dinh Viet</em></h6>
+<br><br><br><br><br>
+</div>
+
+
+<div class="footer">
+  <a>Disclaimer: This website was created as a part of an Assignment</a>
+  <br><br>
+  <a href="https://www.facebook.com/vietngodinh2001" class="fa fa-facebook"></a>
+  <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+  <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+</div>
+    
+</body>
