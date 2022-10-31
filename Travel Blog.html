@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Travel around Vietnam with Dinh Viet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<!------------------- STYLE ---------------------->
+<style>
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #323232;
+  }
+
+  nav, {
+    font-family: 'Open Sans', sans-serif; font-weight: 550;
+  }
+
+  h1
+  {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #025CE0;
+  }
+
+  h2
+  {
+font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #025CE0;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  h4
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    color: #1F4173;
+  }
+
+  #myVideo {
+  position: static;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.leftcolumn
+{
+  float:  left;
+  width: 33.33%;
+  padding: 0 16px;
+}
+
+.centercolumn
+{
+  float:  left;
+  width: 33.33%;
+  padding: 0 16px;
+}
+.rightcolumn
+{
+  float: left;
+  width: 33.33%;
+  padding: 0 16px;
+}
+
+.columnA
+{
+  float: left;
+  width: 50%;
+  padding:  0px;
+}
+
+.columnB
+{
+  float: left;
+  width: 50%;
+  padding:  0px;
+
+}
+
+#more {display: none;}
+
+
+.footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #1B3761;
+   color: white;
+   text-align: center;
+   padding: 16px;
+}
+
+.fa {
+  padding: 12px;
+  font-size: 24px;
+  width: 48px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #224375;
+  color: #D5E0F0;
+}
+
+.fa-linkedin {
+  background: #224375;
+  color: #D5E0F0;
+}
+
+.fa-youtube {
+  background: #224375;
+  color: #D5E0F0;
+}
+
+.container
+{
+  margin: 70px;
+}
+
+img
+{
+  border-radius: 3%;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.info {
+    color: dodgerblue;
+}
+
+.info:hover {
+    background: #1B3761;
+    color: white;
+  }
+</style>
+
+<!--------------
+SCRIPT FOR JS 
+--------------->
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<body>
+<!--------------------
+  NAVIGATION
+  ------------------->
+  <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+    <div class="container-fluid">
+      
+      <div class="collapse navbar-collapse" id="mynavbar" style="margin-left: 100px;">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Travel Blog.html" style="font-size: 24px; font-family: 'Merriweather', serif; font-weight: 800;color: #025CE0"><em>VietTravel</em></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Travel Blog.html" style="margin-left: 60px; margin-top: 6px">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Blog.html" style="margin-left: 24px; margin-top: 6px">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact Us.html" style="margin-left: 24px; margin-top: 6px">Contact Us</a>
+          </li>
+        </ul>
+          <form class="d-flex" style="margin-right: 100px;">
+            <input class="form-control me-2" type="text" placeholder="What is in your mind?" style="width: 300px;"> 
+            <button class="btn btn-primary" type="button" style="background-color: #025CE0">Search</button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+<div class="container" style="padding-top: 60px;">
+  <div class="row">
+    <div class="columnA">
+     <div class="card" style="padding: 50px; border: transparent; background-color: #; border-radius: 0">
+      <h1><em>Inspiration for your travel dreams</em></h1>
+      <br>
+        <p>Launched in 2009, VietTravel is a leading travel site that’s been featured in major media and has won many awards because it offers heart-felt stories, knowledgeable recommendations, and inspired travel guides. If you value authentic cultural experiences, offbeat travel, personal journeys, and adventure travel, this is the site for you. Let us guide you on a transformational journey.</p>
+      </div>
+    </div>
+
+    <div class="columnB" style="padding-top: 30px;"> 
+      <div class="card" style="border: transparent; border-radius: 0">
+      <img src="D:\Việt\Portfolio kì 7\Coding\Assignment 2\Photo\1.jpg" >
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<!------------------------------
+VIDEO 
+------------------------------->
+<div class="card">
+<video autoplay muted loop id="myVideo">
+  <source src="D:\Việt\Portfolio kì 7\Coding\Assignment 2\Video\2.mp4" type="video/mp4">
+</video>
+</div>
+<br>
+<!----------------------
+FIRST PARAGRAPH 
+----------------------->
+<div class="container">
+  <h2><em>Travel with us</em></h2>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card" style="border: transparent;">
+        <img src="D:\Việt\Portfolio kì 7\Coding\Assignment 2\Photo\2.jpg">
+        <h4>50 things you should know before traveling to Vietnam</h4>
+        <p>The karst seascape of Halong Bay is one of the best places to visit in the world for spellbinding sea<span id="dots">...</span><span id="more"> views and is a UNESCO World Heritage Site</span></p>
+        <button class="btn info" onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+    </div>
+
+      <div class="centercolumn">
+        <div class="card" style="border: transparent;">
+          <img src="D:\Việt\Portfolio kì 7\Coding\Assignment 2\Photo\3.jpg">
+          <h4>Vietnam weather: General information & Best time to visit</h4>
+            <p> The Tourism Association of Quang Nam Province has partnered with the Swiss Sustainable Tourism<span id="dots">...</span><span id="more">  Programme to launch a set of green tourism criteria. The provincial tourism association will grant a “Green Certification” to venues in the hospitality industry that meet the international criteria for sustainability.</span></p>
+            <button class="btn info" onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+      </div>
+
+    <div class="rightcolumn">
+      <div class="card" style="border: transparent;">
+        <img src="D:\Việt\Portfolio kì 7\Coding\Assignment 2\Photo\4.jpg">
+        <h4> Farm Tours, Flowers, and Coffee: Agrotourism in Dalat</h4>
+          <p> Dalat is known by some as the city of a thousand flowers, by others as the city of love, and still<span id="dots">...</span><span id="more">  others as the city of spring. It is a mountainous terrain surrounded by pine forest, where temperatures hover at around 20 degrees Celsius year-round.</span></p>
+          <button class="btn info" onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <a>Disclaimer: This website was created as a part of an Assignment</a>
+  <br><br>
+  <a href="https://www.facebook.com/vietngodinh2001" class="fa fa-facebook"></a>
+  <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+  <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+</div>
+    
+</body>
+</html> 
